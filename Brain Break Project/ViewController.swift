@@ -15,13 +15,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     
     override func viewDidLoad() {
+    
         super.viewDidLoad()
         configureSongs()
         
+        table.dataSource = self
+        table.delegate = self
         
     }
     func configureSongs() {
         
+        songs.append(Song(name: "Background music",
+                          albumName: "Sour",
+                          artistName: "Olivia Rodrigo",
+                          imageName: "cover1",
+                          trackName: "song1"))
+        songs.append(Song(name: "Background music",
+                          albumName: "Sour",
+                          artistName: "Olivia Rodrigo",
+                          imageName: "cover1",
+                          trackName: "song1"))
         songs.append(Song(name: "Background music",
                           albumName: "Sour",
                           artistName: "Olivia Rodrigo",
@@ -47,6 +60,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.detailTextLabel?.font = UIFont(name: "Helvetica", size: 17)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

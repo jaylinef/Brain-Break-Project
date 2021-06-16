@@ -101,7 +101,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Music" id="jSi-af-dQa"/>
                     <connections>
-                        <outlet property="table" destination="qff-KS-e5N" id="Zy8-Ql-1yb"/>
+                        <outlet property="table" destination="qff-KS-e5N" id="TZC-Za-toh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXT-ru-XKu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
