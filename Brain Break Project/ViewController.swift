@@ -29,9 +29,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func configureSongs() {
         
         songs.append(Song(name: "Background music",
-                          albumName: "IS",
-                          artistName: "A",
-                          imageName: "Test",
+                          albumName: "Sour",
+                          artistName: "Olvia Rodrigo",
+                          imageName: "cover1",
                           trackName: "song1"))
         
     }
@@ -43,6 +43,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let song = songs[indexPath.row]
+        //configure
+        cell.textLabel?.text = song.name
+        cell.detailTextLabel?.text = song.albumName
+        cell.accessoryType = .disclosureIndicator
+        cell.imageView?.image = UIImage(named: song.imageName)
+        cell.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 18)
+        cell.detailTextLabel?.font = UIFont(name: "Helvetica", size: 17)
         
         return cell
     }
@@ -50,7 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        _ = indexPath.row
+        let position = indexPath.row
     //our songs!!
     guard let vc = storyboard?.instantiateViewController(identifier: "player") else {
         return
