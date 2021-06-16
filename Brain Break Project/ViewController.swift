@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-    let position = indexPath.row
+        _ = indexPath.row
     //our songs!!
     guard let vc = storyboard?.instantiateViewController(identifier: "player") else {
         return
