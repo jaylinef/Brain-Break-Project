@@ -40,28 +40,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return songs.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->  UITableViewCell {
         
-        let cell = tableView.dequeueReusableHeaderFooterView(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         return cell
-        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let position = indexPath.row
-        //our songs!!
-        guard let vc = storyboard?.instantiateViewController(identifier: "player") else{
-             return
-        }
-        present(vc, animated: true)
-                
+    let position = indexPath.row
+    //our songs!!
+    guard let vc = storyboard?.instantiateViewController(identifier: "player") else {
+        return
+    }
+        
+    present(vc, animated: true)
+  }
+        
     
-
-
 }
 
 struct Song {
@@ -71,4 +69,4 @@ struct Song {
     let imageName: String
     let trackName: String
 }
-}
+
