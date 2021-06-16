@@ -10,19 +10,18 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var table: UITableView!
-    
+
     var songs = [Song]()
 
     
     override func viewDidLoad() {
-    
-        super.viewDidLoad()
-        configureSongs()
-        
-        table.dataSource = self
-        table.delegate = self
-        
+     super.viewDidLoad()
+     configureSongs()
+        table?.delegate = self
+        table?.dataSource = self
+   
     }
+    
     func configureSongs() {
         
         songs.append(Song(name: "Background music",
@@ -30,7 +29,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                           artistName: "Olivia Rodrigo",
                           imageName: "cover1",
                           trackName: "song1"))
-        songs.append(Song(name: "Background music",
+        songs.append(Song(name: "Yuh",
                           albumName: "Sour",
                           artistName: "Olivia Rodrigo",
                           imageName: "cover1",
@@ -70,7 +69,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated: true)
         
         let position = indexPath.row
-    guard let vc = storyboard?.instantiateViewController(identifier: "player") as? PlayerViewController else {
+        guard let vc = storyboard?.instantiateViewController(identifier: "player") as? PlayerViewController else {
         return
     }
         vc.songs = songs

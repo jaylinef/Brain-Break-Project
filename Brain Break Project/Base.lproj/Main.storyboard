@@ -41,7 +41,7 @@
         <scene sceneID="BIQ-ej-lnF">
             <objects>
                 <viewController id="Ut6-7u-V1t" customClass="ViewController" customModule="Brain_Break_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rEO-3e-d2j">
+                    <view key="view" contentMode="scaleToFill" id="rEO-3e-d2j" customClass="UITableView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -295,6 +295,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L4S-rd-zIw" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="gcQ-vF-TzZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vkt-9G-LsP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -340,7 +341,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="o0B-lT-uI0"/>
+        <segue reference="ewO-vC-Odg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="home" width="512" height="512"/>
