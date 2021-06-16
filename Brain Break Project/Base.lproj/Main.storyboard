@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Brain_Break_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znP-Lb-piW">
@@ -113,7 +113,7 @@
             <objects>
                 <viewController id="R6D-Jy-zzh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cPD-t2-Xfp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a breathing technique!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4R-Uy-gNY">
@@ -173,7 +173,7 @@
             <objects>
                 <viewController id="vZq-17-IZC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mg7-RH-P2o">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here are the step!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tw-p5-mw2">
@@ -308,9 +308,39 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="784.82142857142856"/>
         </scene>
+        <!--Player View Controller-->
+        <scene sceneID="ZJA-XD-jR9">
+            <objects>
+                <viewController storyboardIdentifier="player" id="I89-NA-3K2" customClass="PlayerViewController" customModule="Brain_Break_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kAU-4J-MGA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ji-fE-hv4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9dp-z9-wMN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9dp-z9-wMN" firstAttribute="bottom" secondItem="2ji-fE-hv4" secondAttribute="bottom" id="lfS-0n-gGA"/>
+                            <constraint firstItem="2ji-fE-hv4" firstAttribute="top" secondItem="9dp-z9-wMN" secondAttribute="top" id="ljL-ej-F6L"/>
+                            <constraint firstItem="2ji-fE-hv4" firstAttribute="leading" secondItem="9dp-z9-wMN" secondAttribute="leading" id="qiT-Fh-Btp"/>
+                            <constraint firstItem="9dp-z9-wMN" firstAttribute="trailing" secondItem="2ji-fE-hv4" secondAttribute="trailing" id="xAA-JT-UOf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="holder" destination="2ji-fE-hv4" id="JKS-im-SjN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dut-w4-A4O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="1432"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="I6o-gA-agF"/>
+        <segue reference="o0B-lT-uI0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="home" width="512" height="512"/>

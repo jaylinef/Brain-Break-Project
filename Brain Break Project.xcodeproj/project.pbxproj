@@ -14,6 +14,7 @@
 		74306ED926793772007B4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74306ED826793772007B4E21 /* Assets.xcassets */; };
 		74306EDC26793772007B4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74306EDA26793772007B4E21 /* LaunchScreen.storyboard */; };
 		9DCD3862267A6D970045F80F /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9DCD3861267A6D970045F80F /* song1.mp3 */; };
+		9DCD3864267AB6740045F80F /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCD3863267AB6740045F80F /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		74306EDB26793772007B4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74306EDD26793772007B4E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DCD3861267A6D970045F80F /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
+		9DCD3863267AB6740045F80F /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				74306ED826793772007B4E21 /* Assets.xcassets */,
 				74306EDA26793772007B4E21 /* LaunchScreen.storyboard */,
 				74306EDD26793772007B4E21 /* Info.plist */,
+				9DCD3863267AB6740045F80F /* PlayerViewController.swift */,
 			);
 			path = "Brain Break Project";
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74306ED426793770007B4E21 /* ViewController.swift in Sources */,
+				9DCD3864267AB6740045F80F /* PlayerViewController.swift in Sources */,
 				74306ED026793770007B4E21 /* AppDelegate.swift in Sources */,
 				74306ED226793770007B4E21 /* SceneDelegate.swift in Sources */,
 			);

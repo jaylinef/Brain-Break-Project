@@ -70,11 +70,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated: true)
         
         let position = indexPath.row
-    //our songs!!
-    guard let vc = storyboard?.instantiateViewController(identifier: "player") else {
+    guard let vc = storyboard?.instantiateViewController(identifier: "player") as? PlayerViewController else {
         return
     }
-        
+        vc.songs = songs
+        vc.position = position
     present(vc, animated: true)
   }
         
