@@ -27,25 +27,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     func configureSongs() {
-        songs.append(Song(name: "Background",
+        
+        songs.append(Song(name: "Background music",
                           albumName: "IS",
                           artistName: "A",
                           imageName: "Test",
-                          trackName: "Test"))
-        songs.append(Song(name: "This",
-                          albumName: "IS",
-                          artistName: "A",
-                          imageName: "Test",
-                          trackName: "Test"))
-        songs.append(Song(name: "This",
-                          albumName: "IS",
-                          artistName: "A",
-                          imageName: "Test",
-                          trackName: "Test"))
+                          trackName: "song1"))
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
         return songs.count
     }
     
@@ -54,11 +45,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableHeaderFooterView(withIdentifier: "cell", for: indexPath)
         
         return cell
-        <#code#>
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        
         tableView.deselectRow(at: indexPath, animated: true)
         
         let position = indexPath.row

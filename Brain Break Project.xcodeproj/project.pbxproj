@@ -13,6 +13,7 @@
 		74306ED726793770007B4E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74306ED526793770007B4E21 /* Main.storyboard */; };
 		74306ED926793772007B4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74306ED826793772007B4E21 /* Assets.xcassets */; };
 		74306EDC26793772007B4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74306EDA26793772007B4E21 /* LaunchScreen.storyboard */; };
+		9DCD3862267A6D970045F80F /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9DCD3861267A6D970045F80F /* song1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		74306ED826793772007B4E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74306EDB26793772007B4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74306EDD26793772007B4E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DCD3861267A6D970045F80F /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		74306ECE26793770007B4E21 /* Brain Break Project */ = {
 			isa = PBXGroup;
 			children = (
+				9DCD3860267A680C0045F80F /* Mad audio */,
 				74306ECF26793770007B4E21 /* AppDelegate.swift */,
 				74306ED126793770007B4E21 /* SceneDelegate.swift */,
 				74306ED326793770007B4E21 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				74306EDD26793772007B4E21 /* Info.plist */,
 			);
 			path = "Brain Break Project";
+			sourceTree = "<group>";
+		};
+		9DCD3860267A680C0045F80F /* Mad audio */ = {
+			isa = PBXGroup;
+			children = (
+				9DCD3861267A6D970045F80F /* song1.mp3 */,
+			);
+			path = "Mad audio";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +137,7 @@
 			files = (
 				74306EDC26793772007B4E21 /* LaunchScreen.storyboard in Resources */,
 				74306ED926793772007B4E21 /* Assets.xcassets in Resources */,
+				9DCD3862267A6D970045F80F /* song1.mp3 in Resources */,
 				74306ED726793770007B4E21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
