@@ -17,8 +17,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
      super.viewDidLoad()
      configureSongs()
-        table?.delegate = self
-        table?.dataSource = self
+        table.delegate = self
+        table.dataSource = self
    
     }
     
