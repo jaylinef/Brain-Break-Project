@@ -9,28 +9,22 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
-    
-
     @IBOutlet var table: UITableView!
     
     var songs = [Song]()
 
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureSongs()
-        table.delegate = self
-        table.dataSource = self
+        
         
     }
     func configureSongs() {
         
         songs.append(Song(name: "Background music",
                           albumName: "Sour",
-                          artistName: "Olvia Rodrigo",
+                          artistName: "Olivia Rodrigo",
                           imageName: "cover1",
                           trackName: "song1"))
         
